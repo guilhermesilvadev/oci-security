@@ -23,7 +23,6 @@ Nosso objetivo é que, ao final deste workshop, os participantes possam ter o co
 
 ## <a name="Laboratório 6: Web Application Firewall (WAF)  ">Laboratório 6: Web Application Firewall (WAF) </a>
 
-
 O WAF é um serviço de segurança global compatível com PCI (Payment Card Industry) que protege aplicativos de tráfego malicioso e indesejado na internet.
 Objetivos
 - Configurar um WAF com o Load Balancer do workshop anterior
@@ -105,6 +104,7 @@ Objetivos
              </html>
              ```
         ![](./images/lab_waf12.png)
+      - Clicar no botão **Add action**
       - Clicar no botão **Add rate limiting rule**
       - Clique no botão **next**
 8. No passo 4, **Protections**, clique em **next**
@@ -112,3 +112,11 @@ Objetivos
    ![](./images/lab_waf09.png)
 10. No passo 6, **Review and create**, clique no botão **Create WAF policy**
    ![](./images/lab_waf13.png)
+
+### <a name="Tarefa 2: Teste do WAF">Tarefa 2: Teste do WAF</a>
+1. Colete o IP do seu load balancer ```Menu => Networking => Load balancers```
+![](./images/lab_waf14.png)
+2. Colete o IP do seu load balances
+![](./images/lab_waf15.png)
+3. Abra o seu brower e digite a url ```http://IP_COLETADO_NO_PASSO_ANTERIRO````
+4. Após carregar a URL realize o refresh da página 4x, você verá a página ser bloqueada.
