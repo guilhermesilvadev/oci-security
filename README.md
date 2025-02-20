@@ -74,9 +74,9 @@ Objetivos
    ![](./images/lab_waf06.png)
    ![](./images/lab_waf07.png)
    ![](./images/lab_waf08.png)
-7. Clique em next para ***Rate Limmit** 
-8. Clique em next para ***Protections** 
-9. Na opção ***Select enforcement point** selecione o load balance criado no workshop anterior
+7. Clique em next para **Rate Limmit** 
+8. Clique em next para **Protections** 
+9. Na opção **Select enforcement point** selecione o load balance criado no workshop anterior
    ![](./images/lab_waf09.png)
-10. Cliente en next para a opção ***Review and create** em seguida clique em ***Create WAF policy**
+10. Cliente en next para a opção **Review and create** em seguida clique em **Create WAF policy**
    ![](./images/lab_waf10.png)
