@@ -18,7 +18,7 @@ Nosso objetivo é que, ao final deste workshop, os participantes possam ter o co
 
 ## <a name="Tarefa 1: Deploy do ambiente básico">Tarefa 1: Deploy do ambiente básico</a>
 
-[![Deploy_To_OCI](images/DeployToOCI.svg)](https://cloud.oracle.com/resourcemanager/stacks/create?zipUrl=https://github.com/guilhermesilvadev/oci-security/blob/c1b720536dad773f5718ed56b96412a8e3f707b9/stack/stack/main.zip)<br>
+[![Deploy_To_OCI](images/DeployToOCI.svg)](https://github.com/guilhermesilvadev/oci-security/archive/refs/tags/1.0.zip)<br>
 *If you are logged into your OCI tenancy in the Commercial Realm (OC1), the button will take you directly to OCI Resource Manager where you can proceed to deploy. If you are not logged, the button takes you to Oracle Cloud initial page where you must enter your tenancy name and login to OCI.*
 <br>
 
@@ -27,9 +27,8 @@ Nosso objetivo é que, ao final deste workshop, os participantes possam ter o co
 
 O WAF é um serviço de segurança global compatível com PCI (Payment Card Industry) que protege aplicativos de tráfego malicioso e indesejado na internet.
 Objetivos
-- Configurar um WAF com o Load Balancer do exercício anterior
+- Configurar um WAF com o Load Balancer do workshop anterior
 - Trabalhar com regra de Controle de Acesso
-- Configurar Rate Limiting
 - Testar
 
 ### <a name="Tarefa 1: Criar o WAF">Tarefa 1: Criando o WAF</a>
@@ -69,7 +68,7 @@ Objetivos
               </body>
               </html>
               ```
-        - Clicar no botão *** Add action ***
+        - Clicar no botão **Add action**
    ![](./images/lab_waf05.png)
    ![](./images/lab_waf06.png)
    ![](./images/lab_waf07.png)
@@ -78,5 +77,5 @@ Objetivos
 8. Clique em next para **Protections** 
 9. Na opção **Select enforcement point** selecione o load balance criado no workshop anterior
    ![](./images/lab_waf09.png)
-10. Cliente en next para a opção **Review and create** em seguida clique em **Create WAF policy**
+10.No passo **Review and create** clique em next e em seguida clique em **Create WAF policy**
    ![](./images/lab_waf10.png)
