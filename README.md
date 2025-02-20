@@ -10,7 +10,7 @@ Por meio deste guia, trabalharemos com:
 - Load Balancer
 - Web Application Firewall
 
-As chaves SSH para acessso as instâncias ```servidor-http01``` e ```servidor-http02```, que serão criadas neste deploy, estão no diretório ```oci-security/stack/ssh-keys```
+As chaves SSH para acessso as instâncias ```servidor-http01``` e ```servidor-http02```, que serão criadas neste deploy, estão no diretório ```oci-security/stack/ssh-keys```.
 
 Nosso objetivo é que, ao final deste workshop, os participantes possam ter o conhecimento na prática para implementar e manter seus ambientes na nuvem seguros.
 
@@ -42,7 +42,7 @@ Objetivos
 4. Preencha o campo Name com o valor **waf-policie-dataprev** e clique no botão **next** que está no final da página
    ![](./images/lab_waf03.png)
 
-5. Marque a opção **Enable access control** e clique no botão **Add access rules**
+5. Marque a opção **Enable access control** e clique no botão **Add access rule**
    ![](./images/lab_waf04.png)
 
 6. Adicione uma regra com as configurações abaixo
@@ -74,9 +74,39 @@ Objetivos
    ![](./images/lab_waf06.png)
    ![](./images/lab_waf07.png)
    ![](./images/lab_waf08.png)
-7. Clique em next para **Rate Limmit** 
-8. Clique em next para **Protections** 
-9. Na opção **Select enforcement point** selecione o load balance criado no workshop anterior
+
+7. No passo 3, **Rate limiting**, marque a opção **Enable access control** e clique no botão **Add rate limiting rule**
+      - Sessão Add rate limiting rule
+         - Action name: Add rate limiting rule
+           - Name: rate-limit-10s
+           - Condition type: Path
+           - Operator: is
+           - Value: /
+         - Rate limiting configuration
+           - Requests limit: 3
+           - Period in seconds: 5
+           - Action duration in seconds: 10
+         - Rule action: create a new rule
+           - Name: block-rate-limit
+           - Type: Return HTTP response
+           - Response page body: Apague o conteúdo existente e cole o conteúdo abaixo
+             ``` 
+             <!DOCTYPE html>
+             <html>
+             <head>
+             <title>Diversos acessos em pouco tempo!</title>
+             </head>
+             <body>
+             <h1 id="Welcome">Região não permitida!</h1>
+             <p>Aguarde 10 segundos para acessar novamente!</p>
+             </body>
+             </html>
+             ```
+      - Clicar no botão **Add action**
+      - Clicar no botão **Add rate limiting rule**
+      - Clique no botão **next**
+8. No passo 4, **Protections**, clique em **next**
+9. No passo 5, **Select enforcement point**, selecione o load balance criado no workshop anterior.
    ![](./images/lab_waf09.png)
 10.No passo **Review and create** clique em next e em seguida clique em **Create WAF policy**
    ![](./images/lab_waf10.png)
