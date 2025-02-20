@@ -39,10 +39,10 @@ Objetivos
 3. Clique na opção **Create WAF Policy**
    ![Criação police](./images/lab_waf02.png)
 
-4. Preencha o campo Name com o valor **waf-policie-dataprev** e clique no botão **next** que está no final da página
+4. No passo 1, **Basic information**, preencha o campo Name com o valor **waf-policie-dataprev** e clique no botão **next** que está no final da página
    ![](./images/lab_waf03.png)
 
-5. Marque a opção **Enable access control** e clique no botão **Add access rule**
+5. No passo 2, **Access control**, marque a opção **Enable access control** e clique no botão **Add access rule**
    ![](./images/lab_waf04.png)
 
 6. Adicione uma regra com as configurações abaixo
