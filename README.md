@@ -7,14 +7,13 @@ Exploraremos diversos recursos de segurança disponíveis na Oracle Cloud. É im
 
 Por meio deste guia, trabalharemos com:
 
-- Security Zones
-- Bastion e Network Security Group
-- Vulnerability Scanning
-- Cloud Guard
 - Load Balancer
 - Web Application Firewall
 
+As chaves para acessso as instâncias ```servidor-http01``` e ```servidor-http02``` criadas netste deployment estão no diretório ```oci-security/stack/ssh-keys```
+
 Nosso objetivo é que, ao final deste workshop, os participantes possam ter o conhecimento na prática para implementar e manter seus ambientes na nuvem seguros.
+
 
 ## <a name="Tarefa 1: Deploy do ambiente básico">Tarefa 1: Deploy do ambiente básico</a>
 
@@ -55,7 +54,8 @@ Objetivos
           - Action name: Create new Action
             - Name: block-USA
             - Type: Return HTTP response
-            - Response page body:  
+            - Response code: 403 Forbidden
+            - Response page body: Apague o conteúdo existente e cole o conteúdo abaixo
               ``` 
               <!DOCTYPE html>
               <html>
@@ -68,7 +68,8 @@ Objetivos
               </body>
               </html>
               ```
-        - Clicar no botão **Add action**
+        - Clicar no botão **Add access rule**
+        - Clique no botão next
    ![](./images/lab_waf05.png)
    ![](./images/lab_waf06.png)
    ![](./images/lab_waf07.png)
