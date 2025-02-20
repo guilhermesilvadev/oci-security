@@ -69,7 +69,7 @@ Objetivos
               </html>
               ```
         - Clicar no botão **Add access rule**
-        - Clique no botão next
+        - Clique no botão **next**
    ![](./images/lab_waf05.png)
    ![](./images/lab_waf06.png)
    ![](./images/lab_waf07.png)
@@ -86,6 +86,7 @@ Objetivos
            - Requests limit: 3
            - Period in seconds: 5
            - Action duration in seconds: 10
+        ![](./images/lab_waf11.png)
          - Rule action: create a new rule
            - Name: block-rate-limit
            - Type: Return HTTP response
@@ -102,11 +103,11 @@ Objetivos
              </body>
              </html>
              ```
-      - Clicar no botão **Add action**
+        ![](./images/lab_waf12.png)
       - Clicar no botão **Add rate limiting rule**
       - Clique no botão **next**
 8. No passo 4, **Protections**, clique em **next**
 9. No passo 5, **Select enforcement point**, selecione o load balance criado no workshop anterior.
    ![](./images/lab_waf09.png)
-10.No passo **Review and create** clique em next e em seguida clique em **Create WAF policy**
-   ![](./images/lab_waf10.png)
+10. No passo 6, **Review and create**, clique no botão **Create WAF policy**
+   ![](./images/lab_waf13.png)
