@@ -18,7 +18,7 @@ Nosso objetivo é que, ao final deste workshop, os participantes possam ter o co
 
 ## <a name="Tarefa 1: Deploy do ambiente básico">Tarefa 1: Deploy do ambiente básico</a>
 
-[![Deploy_To_OCI](images/DeployToOCI.svg)](https://github.com/guilhermesilvadev/oci-security/archive/refs/tags/1.0.zip)<br>
+[![Deploy_To_OCI](images/DeployToOCI.svg)](https://cloud.oracle.com/resourcemanager/stacks/create?zipUrl=https://github.com/guilhermesilvadev/oci-security/archive/refs/tags/1.0.zip)<br>
 *If you are logged into your OCI tenancy in the Commercial Realm (OC1), the button will take you directly to OCI Resource Manager where you can proceed to deploy. If you are not logged, the button takes you to Oracle Cloud initial page where you must enter your tenancy name and login to OCI.*
 <br>
 
