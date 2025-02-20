@@ -10,7 +10,7 @@ Por meio deste guia, trabalharemos com:
 - Load Balancer
 - Web Application Firewall
 
-As chaves SSH para acessso as instâncias ```servidor-http01``` e ```servidor-http02``` que serão criadas neste deploy estão no diretório ```oci-security/stack/ssh-keys```
+As chaves SSH para acessso as instâncias ```servidor-http01``` e ```servidor-http02```, que serão criadas neste deploy, estão no diretório ```oci-security/stack/ssh-keys```
 
 Nosso objetivo é que, ao final deste workshop, os participantes possam ter o conhecimento na prática para implementar e manter seus ambientes na nuvem seguros.
 
