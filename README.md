@@ -89,6 +89,7 @@ Objetivos
         ![](./images/lab_waf11.png)
          - Rule action: create a new rule
            - Name: block-rate-limit
+           - Response code: 403 Forbidden
            - Type: Return HTTP response
            - Response page body: Apague o conteúdo existente e cole o conteúdo abaixo
              ``` 
@@ -98,7 +99,7 @@ Objetivos
              <title>Diversos acessos em pouco tempo!</title>
              </head>
              <body>
-             <h1 id="Welcome">Região não permitida!</h1>
+             <h1 id="Welcome">Diversos acessos em pouco tempo!</h1>
              <p>Aguarde 10 segundos para acessar novamente!</p>
              </body>
              </html>
