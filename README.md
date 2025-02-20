@@ -116,7 +116,8 @@ Objetivos
 ### <a name="Tarefa 2: Teste do WAF">Tarefa 2: Teste do WAF</a>
 1. Colete o IP do seu load balancer ```Menu => Networking => Load balancers```
 ![](./images/lab_waf14.png)
-2. Colete o IP do seu load balances
+2. Colete o IP do seu load balancer
 ![](./images/lab_waf15.png)
-3. Abra o seu brower e digite a url ```http://IP_COLETADO_NO_PASSO_ANTERIRO````
-4. Após carregar a URL realize o refresh da página 4x, você verá a página ser bloqueada.
+3. Abra o seu brower e digite a url ```http://IP_LoadBalancer``` subistituindo o IP_LoadBalancer pelo IP que foi coletado no passo 2.
+4. Após o browser carregar a URL, realize o refresh da página 4 vezes, você verá a página ser bloqueada pelo WAF por ter atingido o limit.
+5. Aguarde 10 segundos e realize o refresh do browser novamente, sua página será recarregada.
